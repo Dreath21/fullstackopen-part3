@@ -12,8 +12,7 @@
   "author": "Dreath29",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dnpm install eslint @eslint/js --save-devotenv": "^16.5.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.13.2",
     "morgan": "^1.10.0"
