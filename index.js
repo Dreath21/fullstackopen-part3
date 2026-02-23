@@ -1,7 +1,6 @@
 require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
-const cors = require('cors')
 const Person = require('./models/persons')
 
 const app = express()
@@ -19,7 +18,6 @@ const requestLogger = (request, response, next) => {
   next()
 }
 
-app.use(cors())
 app.use(express.static('dist'))
 app.use(express.json())
 app.use(requestLogger)
