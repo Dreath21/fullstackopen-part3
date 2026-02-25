@@ -35,7 +35,7 @@ const errorHandler = (error, request, response, next) => {
   next(error)
 }
 
-app.get('/api/persons/info', (request, response) => {
+app.get('/info', (request, response) => {
   Person.countDocuments({}).then((count) => {
     console.log('Numbers of people: ', count)
     response.send(
